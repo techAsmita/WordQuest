@@ -1,0 +1,28 @@
+/// Curated uppercase words for level-based puzzle generation.
+class WordBank {
+  WordBank._();
+
+  static const List<String> all = [
+    'APP', 'RUN', 'API', 'BUG', 'FIX', 'KEY', 'MAP', 'SET', 'ROW', 'BOX',
+    'TAP', 'UIX', 'DEV', 'GIT',
+    'DART', 'GRID', 'GAME', 'PLAY', 'TEST', 'LIST', 'VIEW', 'FLOW', 'NODE',
+    'DATA', 'FILE', 'PATH', 'ICON', 'PAGE', 'HOME', 'MENU', 'CODE', 'JSON',
+    'STATE', 'BUILD', 'STACK', 'QUEUE', 'ARRAY', 'CLASS', 'DEBUG', 'INPUT',
+    'LOGIN', 'THEME', 'ROUTE', 'CACHE', 'FRAME', 'PIXEL', 'SCORE', 'LEVEL',
+    'WIDGET', 'BUTTON', 'SCREEN', 'LAYOUT', 'COLUMN', 'SCROLL', 'SOCKET',
+    'STREAM', 'FUTURE', 'NATIVE', 'MOBILE', 'DESIGN', 'PADDING',
+    'FLUTTER', 'PACKAGE', 'LIBRARY', 'NETWORK', 'CONTEXT', 'SERVICE',
+    'ANIMATE', 'DISPLAY', 'STORAGE', 'COMPILER',
+    'MATERIAL', 'PLATFORM', 'FUNCTION', 'VARIABLE', 'DATABASE',
+  ];
+
+  static List<String> filter({
+    required int minLength,
+    required int maxLength,
+  }) {
+    return all
+        .where((w) => w.length >= minLength && w.length <= maxLength)
+        .toSet()
+        .toList();
+  }
+}
