@@ -19,7 +19,7 @@
 
 WordQuest is a word-search puzzle game built entirely in Flutter. Find every hidden word in a letter grid by pressing and dragging in a straight line — horizontal, vertical, or diagonal, forwards or backwards — across five levels that get progressively larger and trickier.
 
-It's a client-only app: puzzles are generated on-device, and progress (best score and best time per level) is saved locally using `shared_preferences`. There is currently no backend, account system, or online leaderboard — everything you see runs entirely in the browser or on-device.
+Puzzles are generated on-device, while best scores and times are persisted locally using `shared_preferences`.
 
 Repository: [github.com/techAsmita/WordQuest](https://github.com/techAsmita/WordQuest)
 
@@ -187,4 +187,4 @@ Not implemented today — noted here as possible directions, not commitments:
 **Asmita Roy**
 [github.com/techAsmita](https://github.com/techAsmita)
 
-Built as a portfolio project to demonstrate Flutter app architecture, state management, and cross-platform UI — from puzzle-generation logic to a deployed, playable web build.
+Built as a portfolio project to demonstrate Flutter architecture, game-state management, responsive UI, persistence, and deployment.
